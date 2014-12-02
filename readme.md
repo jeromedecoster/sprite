@@ -48,13 +48,13 @@ Stop the animation
 stop()
 ```
 
-Stop the animation at frame index 3
+Stop the animation at frame `index` 3
 
 ```js
 stop(3)
 ```
 
-Stop the animation when frame index 3 is reached
+Stop the animation when frame `index 3 is reached
 
 ```js
 stop(3, true)
@@ -68,6 +68,19 @@ stop(3, true)
 * `el`: The canvas or div element
 
 ## Options
+
+#### options.index
+
+* Type: `Number`
+* Default: `0`
+
+The displayed frame index at start
+
+#### options.frames
+
+* Type: `Number`
+
+The count of real frames. Useful when `colmuns` + `rows` are used
 
 #### options.delay
 
