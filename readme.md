@@ -54,7 +54,7 @@ Stop the animation at frame `index` 3
 stop(3)
 ```
 
-Stop the animation when frame `index 3 is reached
+Stop the animation when frame `index` 3 is reached
 
 ```js
 stop(3, true)
@@ -74,7 +74,7 @@ stop(3, true)
 * Type: `Number`
 * Default: `0`
 
-The displayed frame index at start
+The frame `index` displayed at start
 
 #### options.frames
 
@@ -102,11 +102,11 @@ The motion type
 * Type: `Number`
 * Default: `0`
 
-The delay before restart in yoyo mode
+The delay before restart in `yoyo` mode
 
 #### options.waitEnd
 
 * Type: `Number`
 * Default: `0`
 
-The delay before rewind in yoyo mode, or before restart in loop mode
+The delay before rewind in `yoyo` mode, or before restart in `loop` mode
