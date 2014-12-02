@@ -11,9 +11,9 @@ Sprite manager
 ```js
 var sp = new Sprite({
   src: '/sprite.png',
-  width: 100,
-  height: 200,
-  delay: 40,
+  columns: 7,
+  rows: 1,
+  delay: 150,
   motion: 'yoyo',
   el: document.getElementsByClassName('sprite')[0]
 });
@@ -40,7 +40,7 @@ Play the animation in reverse order
 rewind()
 ```
 
-#### stop([frame], [finish])
+#### stop([index], [finish])
 
 Stop the animation
 
@@ -48,13 +48,13 @@ Stop the animation
 stop()
 ```
 
-Stop the animation at frame 3
+Stop the animation at frame index 3
 
 ```js
 stop(3)
 ```
 
-Stop the animation when frame 3 is reached
+Stop the animation when frame index 3 is reached
 
 ```js
 stop(3, true)
@@ -63,8 +63,8 @@ stop(3, true)
 ## Required params
 
 * `src`: The spritesheet path
-* `width`: The sprite width
-* `height`: The sprite height
+* `columns`: The count of image by row
+* `rows`: The count of rows
 * `el`: The canvas or div element
 
 ## Options

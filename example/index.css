@@ -1,0 +1,31 @@
+.sprite {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+
+body {
+    // color: #f00;
+}
+
+.inject {
+    width: 100px;
+    height: 200px;
+}
+
+span.param {
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 90px;
+}
+
+input[type='range'] {
+    width: 250px;
+}
+
+input[type='button'] {
+    font-size: 8px;
+    top: -3px;
+    position: relative;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sprite</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <br/>
+    <span class="param">type :</span>
+    <input type="radio" name="type" id="canvas" value="canvas"><label for="canvas">canvas</label>
+    <input type="radio" name="type" id="div" value="div"><label for="div">div</label>
+    <br/>
+    <span class="param">mouseleave :</span>
+    <input type="radio" name="mouseleave" id="mlrewind" value="rewind"><label for="mlrewind">rewind</label>
+    <input type="radio" name="mouseleave" id="stop0" value="stop0"><label for="stop0">stop(0)</label>
+    <input type="radio" name="mouseleave" id="stop0true" value="stop0true"><label for="stop0true">stop(0, true)</label>
+    <input type="radio" name="mouseleave" id="stop10true" value="stop10true"><label for="stop10true">stop(-10, true)</label>
+    <br/>
+    <span class="param">click :</span>
+    <input type="radio" name="click" id="crewind" value="rewind"><label for="crewind">rewind</label>
+    <input type="radio" name="click" id="stop2" value="stop2"><label for="stop2">stop(2)</label>
+    <input type="radio" name="click" id="stop2true" value="stop2true"><label for="stop2true">stop(2, true)</label>
+    <input type="radio" name="click" id="stop10true" value="stop10true"><label for="stop10true">stop(-10, true)</label>
+    <hr/>
+    <span class="param">src :</span>
+    <input type="radio" name="src" id="horizontal" value="horizontal"><label for="horizontal">horizontal</label>
+    <input type="radio" name="src" id="vertical" value="vertical"><label for="vertical">vertical</label>
+    <input type="radio" name="src"id="rows" value="rows" ><label for="rows">rows</label>
+    <br/>
+    <span class="param">delay :</span>
+    <input type="button" name="reset" value="x">
+    <input type="range" name="delay" id="delay" value="15" min="-10" max="2000" step="5" width="450px"><label for="delay">15</label>
+    <br/>
+    <span class="param">motion :</span>
+    <input type="radio" name="motion" id="none" value="none"><label for="none">none</label>
+    <input type="radio" name="motion" id="loop" value="loop"><label for="loop">loop</label>
+    <input type="radio" name="motion" id="yoyo" value="yoyo"><label for="yoyo">yoyo</label>
+    <br/>
+    <span class="param">waitStart :</span>
+    <input type="button" name="reset" value="x">
+    <input type="range" name="waitStart" id="waitStart" value="15" min="-10" max="2000" step="5"><label for="waitStart">15</label>
+    <br/>
+    <span class="param">waitEnd :</span>
+    <input type="button" name="reset" value="x">
+    <input type="range" name="waitEnd" id="waitEnd" value="15" min="-10" max="2000" step="5"><label for="waitEnd">15</label>
+    <br/>
+    <span class="param">index :</span>
+    <input type="button" name="reset" value="x">
+    <input type="range" name="index" id="index" value="0" min="-1" max="5" step="1"><label for="index">0</label>
+    <br/>
+    <span class="param">frames :</span>
+    <input type="button" name="reset" value="x">
+    <input type="range" name="frames" id="frames" value="0" min="-1" max="8" step="1"><label for="frames">0</label>
+
+    <script type="text/javascript" src="index.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
