@@ -79,6 +79,7 @@ The frame `index` displayed at start
 #### options.frames
 
 * Type: `Number`
+* Default: `colmuns` * `rows`
 
 The count of real frames. Useful when `colmuns` + `rows` are used
 
