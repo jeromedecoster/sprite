@@ -1,4 +1,22 @@
 
+/**
+ * Expose `Sprite`.
+ */
+
+if (typeof module == 'undefined') {
+  window.Sprite = Sprite;
+} else {
+  module.exports = Sprite;
+}
+
+/**
+ * Initialize `Sprite`.
+ *
+ * @param {Object} options
+ * @return {Sprite}
+ * @api public
+ */
+
 function Sprite(options) {
   if (!(this instanceof Sprite)) return new Sprite(options);
 
