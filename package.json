@@ -4,10 +4,6 @@
   "description": "Sprite manager",
   "readme": "Sprite manager",
   "main": "dist/index.min.js",
-  "files": [
-    "dist/index.min.js",
-    "index.js"
-  ],
   "devDependencies": {
     "browser-sync": "~1.7",
     "dist": "jeromedecoster/dist"

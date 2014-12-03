@@ -15,12 +15,20 @@ var sp = new Sprite({
   rows: 1,
   delay: 150,
   motion: 'yoyo',
-  el: document.getElementsByClassName('sprite')[0]
+  el: document.querySelector('.sprite')
 });
 
 sp.play();
 ```
 
+Direct instantiation, without `new`, is also possible
+
+```js
+var sp = Sprite({
+  src: '/sprite.png'
+  // ...
+});
+```
 
 ## API
 
@@ -69,26 +77,26 @@ stop(3, true)
 
 ## Options
 
-#### options.index
-
-* Type: `Number`
-* Default: `0`
-
-The frame `index` displayed at start
-
-#### options.frames
-
-* Type: `Number`
-* Default: `colmuns` * `rows`
-
-The count of real frames. Useful when `colmuns` + `rows` are used
-
 #### options.delay
 
 * Type: `Number`
 * Default: `60`
 
 The delay between each frame
+
+#### options.frames
+
+* Type: `Number`
+* Default: `colmuns` * `rows`
+
+The count of real frames. Useful when `colmuns` and `rows` are both greater than 1
+
+#### options.index
+
+* Type: `Number`
+* Default: `0`
+
+The frame `index` displayed at start
 
 #### options.motion
 

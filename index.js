@@ -3,9 +3,7 @@
  * Expose `Sprite`.
  */
 
-if (typeof module == 'undefined') {
-  window.Sprite = Sprite;
-} else {
+if (typeof module != 'undefined') {
   module.exports = Sprite;
 }
 
@@ -84,8 +82,8 @@ Sprite.prototype.rewind = function() {
  * Stop the animation at frame `index`.
  * If `finish` is true, continue the animation and stop only when the frame `index` is reached.
  *
- * @param  {Number} index
- * @param  {Boolean} finish
+ * @param {Number} index
+ * @param {Boolean} finish
  * @api private
  */
 
@@ -107,7 +105,7 @@ Sprite.prototype.stop = function(index, finish) {
 /**
  * Check for required params presence in `obj`.
  *
- * @param  {Object} obj
+ * @param {Object} obj
  * @api private
  */
 
@@ -120,8 +118,8 @@ Sprite.prototype.check = function(obj) {
 /**
  * Image onload event handler.
  *
- * @param  {Image} img
- * @param  {Object} options
+ * @param {Image} img
+ * @param {Object} options
  * @api private
  */
 
@@ -178,7 +176,7 @@ Sprite.prototype.draw = function() {
 /**
  * Reset instervals and variables.
  *
- * @param  {Boolean} keep
+ * @param {Boolean} keep
  * @api private
  */
 
@@ -276,7 +274,7 @@ Sprite.prototype.update = function() {
 /**
  * Clamp the `index` between 0 and the `max` frame index.
  *
- * @param  {Number} index
+ * @param {Number} index
  * @return {Number}
  * @api private
  */
